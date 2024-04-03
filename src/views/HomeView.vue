@@ -17,10 +17,12 @@ useHead({
   title: 'United Legal Alliance',
   meta: [
     {
-      name: 'United Legal Alliance',
+      name: 'description',
       content:
         'Serving your immigration needs, Qualified assistance in preparing documents for successful immigration to the USA. There for our clients whenever they need us'
-    }
+    },
+    { name: 'robots', content: 'all' },
+    { property: 'og:site_name', content: 'United Legal Alliance' }
   ]
 })
 </script>
