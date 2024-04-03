@@ -1,4 +1,6 @@
 <script setup>
+import { useHead } from '@unhead/vue'
+
 import TheHeader from '@/components/TheHeader.vue'
 import TheHero from '@/components/TheHero.vue'
 import TheAboutUs from '@/components/TheAboutUs.vue'
@@ -10,6 +12,17 @@ import TheOurClients from '@/components/TheOurClients.vue'
 import TheContactUs from '@/components/TheContactUs.vue'
 import TheConsultation from '@/components/TheConsultation.vue'
 import TheFooter from '@/components/TheFooter.vue'
+
+useHead({
+  title: 'Website Title',
+  meta: [
+    {
+      name: 'United Legal Alliance',
+      content:
+        'Serving your immigration needs, Qualified assistance in preparing documents for successful immigration to the USA. There for our clients whenever they need us'
+    }
+  ]
+})
 </script>
 
 <template>
