@@ -1,14 +1,24 @@
 <script setup>
 import { ref } from 'vue'
+import * as Lock from 'v3-scroll-lock'
 import TheModal from './TheModal.vue'
 import NonImmigrant from './ModalContent/NonImmigrant.vue'
 import EmploymentBased from './ModalContent/EmploymentBased.vue'
 import CitizenshipIssues from './ModalContent/CitizenshipIssues.vue'
 import MoreIconVue from './icons/MoreIcon.vue'
 
+const { lockScroll, unlockScroll } = Lock
+
 const contentIndex = ref(0)
+const modal = ref()
 
 const setModal = (value) => {
+  if (value !== 0) {
+    lockScroll(modal, { reserveScrollBarGap: true })
+  }
+  if (value === 0) {
+    unlockScroll(modal)
+  }
   contentIndex.value = value
 }
 </script>
@@ -59,9 +69,15 @@ const setModal = (value) => {
       </li>
     </ul>
     <teleport to="#modal">
-      <TheModal :isOpen="contentIndex === 1" @close="setModal(0)"> <NonImmigrant /></TheModal>
-      <TheModal :isOpen="contentIndex === 2" @close="setModal(0)"> <EmploymentBased /></TheModal>
-      <TheModal :isOpen="contentIndex === 3" @close="setModal(0)"><CitizenshipIssues /> </TheModal>
+      <TheModal :isOpen="contentIndex === 1" @close="setModal(0)">
+        <NonImmigrant ref="modal"
+      /></TheModal>
+      <TheModal :isOpen="contentIndex === 2" @close="setModal(0)">
+        <EmploymentBased ref="modal"
+      /></TheModal>
+      <TheModal :isOpen="contentIndex === 3" @close="setModal(0)"
+        ><CitizenshipIssues ref="modal" />
+      </TheModal>
     </teleport>
   </section>
 </template>
