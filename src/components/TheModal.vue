@@ -1,4 +1,5 @@
 <script setup>
+import { watch } from 'vue'
 import LanguageSelector from './LanguageSelect/LanguageSelector.vue'
 import PlusIconVue from './icons/PlusIcon.vue'
 defineProps({
@@ -7,11 +8,11 @@ defineProps({
 
 const emit = defineEmits(['close'])
 </script>
-
+<!-- v-scroll-lock="isOpen"  -->
 <template>
   <transition name="modal">
     <div v-if="isOpen" class="backdrop" @click="emit('close', false)">
-      <div v-scroll-lock="isOpen" class="modal" @click.stop="">
+      <div class="modal" @click.stop="">
         <div class="header">
           <img src="/Logo.png" alt="Logo" class="logo" />
           <img src="/LogotypeBlack.png" alt="Logo" class="logo-text" />

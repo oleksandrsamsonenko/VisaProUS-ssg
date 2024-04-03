@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import { lockScroll, unlockScroll } from 'v3-scroll-lock'
 
 import LanguageSelector from './LanguageSelect/LanguageSelector.vue'
 import TheModal from './TheModal.vue'
@@ -7,8 +8,14 @@ import HeroModal from './ModalContent/HeroModal.vue'
 import MenuIcon from './icons/MenuIcon.vue'
 
 const isModalOpen = ref(false)
-
+const modal = ref()
 const toggleModal = (value) => {
+  if (value === true) {
+    lockScroll(modal, { reserveScrollBarGap: true })
+  }
+  if (value === false) {
+    unlockScroll(modal)
+  }
   isModalOpen.value = value
 }
 
@@ -41,7 +48,7 @@ onMounted(() => {})
     </div>
     <teleport to="#modal">
       <TheModal :isOpen="isModalOpen" @close="toggleModal">
-        <HeroModal @close="toggleModal" />
+        <HeroModal @close="toggleModal" ref="modal" />
       </TheModal>
     </teleport>
   </header>
