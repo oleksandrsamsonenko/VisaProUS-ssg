@@ -1,0 +1,61 @@
+@import './base.css';
+
+#app {
+  max-width: 1680px;
+  margin: 0 auto;
+  font-weight: normal;
+
+  --swiper-theme-color: #073826 !important;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 31.2px;
+  letter-spacing: -0.03em;
+  color: #22282b;
+
+  @media (min-width: 768px) {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40.8px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 62px;
+    letter-spacing: -0.03em;
+  }
+}
+
+.primary-text {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28.6px;
+  letter-spacing: -0.03em;
+  color: #22282b;
+
+  @media (min-width: 1440px) {
+    font-size: 36px;
+    line-height: 47px;
+  }
+}
+
+.secondary-text {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: -0.02em;
+  color: #909da2;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
