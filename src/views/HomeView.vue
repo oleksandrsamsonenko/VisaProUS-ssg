@@ -14,7 +14,7 @@ import TheConsultation from '@/components/TheConsultation.vue'
 import TheFooter from '@/components/TheFooter.vue'
 
 useHead({
-  title: 'United Legal Alliance',
+  title: 'United Legal Alliance | Successful immigration to the USA',
   meta: [
     {
       name: 'description',
