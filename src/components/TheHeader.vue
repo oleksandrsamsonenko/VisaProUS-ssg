@@ -1,11 +1,13 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import { lockScroll, unlockScroll } from 'v3-scroll-lock'
-
+// import { lockScroll, unlockScroll } from 'v3-scroll-lock'
+import pkg from 'v3-scroll-lock'
 import LanguageSelector from './LanguageSelect/LanguageSelector.vue'
 import TheModal from './TheModal.vue'
 import HeroModal from './ModalContent/HeroModal.vue'
 import MenuIcon from './icons/MenuIcon.vue'
+
+const { lockScroll, unlockScroll } = pkg
 
 const isModalOpen = ref(false)
 const modal = ref()

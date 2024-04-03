@@ -1,5 +1,4 @@
 <script setup>
-import { watch } from 'vue'
 import LanguageSelector from './LanguageSelect/LanguageSelector.vue'
 import PlusIconVue from './icons/PlusIcon.vue'
 defineProps({
