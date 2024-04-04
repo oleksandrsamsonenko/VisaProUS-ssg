@@ -20,7 +20,7 @@
     </div>
     <ul class="team">
       <li class="member">
-        <img src="/OurTeam/1.jpg" alt="Andre Yeremin" class="picture" />
+        <img src="/OurTeam/1.jpg" alt="Andre Yeremin" title="Andre Yeremin" class="picture" />
         <h3 class="name">Andre Yeremin</h3>
         <p class="secondary-text position">
           Immigration Law/ ITAR International Traffic an Arms Regulations Pepperdine School of Law (
@@ -28,7 +28,7 @@
         </p>
       </li>
       <li class="member">
-        <img src="/OurTeam/2.jpg" alt="Anna Murray" class="picture" />
+        <img src="/OurTeam/2.jpg" alt="Anna Murray" title="Anna Murray" class="picture" />
         <h3 class="name">Anna Murray</h3>
         <p class="secondary-text position">
           Immigration Law / Criminal Defense Law. Washington University School of Law (St. Louis
@@ -36,7 +36,7 @@
         </p>
       </li>
       <li class="member">
-        <img src="/OurTeam/3.jpg" alt="Alona Sulman" class="picture" />
+        <img src="/OurTeam/3.jpg" alt="Alona Sulman" title="Alona Sulman" class="picture" />
         <h3 class="name">Alona Sulman</h3>
         <p class="secondary-text position">Immigration Law. New York Law School (New York, NY)</p>
       </li>

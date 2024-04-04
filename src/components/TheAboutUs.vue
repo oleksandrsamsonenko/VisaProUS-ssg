@@ -31,7 +31,12 @@
         individuals and businesses navigate the tangle of USA immigration laws
       </h2>
       <div class="content">
-        <img src="/AboutUs1.jpg" alt="Our firm's objective" class="image" />
+        <img
+          src="/AboutUs1.jpg"
+          alt="Our firm's objective"
+          title="Our firm's objective"
+          class="image"
+        />
         <p class="secondary-text description border">
           We handle immigration matters throughout the United States, Europe and Asia. Our firm's
           objective is to provide you with personalized attention and professional service towards
@@ -46,6 +51,7 @@
           <img
             src="/AboutUs2.jpg"
             alt="Always in touch"
+            title="Always in touch"
             width="160px"
             height="114px"
             class="clients"
@@ -68,6 +74,7 @@
           <img
             src="/AboutUs3.jpg"
             alt="Efficient solutions through technology"
+            title="Efficient solutions through technology"
             width="160px"
             height="114px"
             class="flag"

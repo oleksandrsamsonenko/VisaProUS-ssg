@@ -30,7 +30,12 @@ const setModal = (value) => {
       <li class="item">
         <span class="number">01</span>
         <div class="wrapper">
-          <img src="/OurServices/1.jpg" alt="Nonimmigrant Visas" class="image" />
+          <img
+            src="/OurServices/1.jpg"
+            alt="Nonimmigrant Visas"
+            title="Nonimmigrant Visas"
+            class="image"
+          />
           <div class="text-wrapper">
             <h3 class="primary-text">Nonimmigrant Visas</h3>
             <p class="secondary-text description">
@@ -44,7 +49,12 @@ const setModal = (value) => {
       <li class="item">
         <span class="number">02</span>
         <div class="wrapper">
-          <img src="/OurServices/2.jpg" alt="Employment Based Visas" class="image" />
+          <img
+            src="/OurServices/2.jpg"
+            alt="Employment Based Visas"
+            title="Employment Based Visas"
+            class="image"
+          />
           <div class="text-wrapper">
             <h3 class="primary-text">Employment Based Visas</h3>
             <p class="secondary-text description">
@@ -57,7 +67,12 @@ const setModal = (value) => {
       <li class="item">
         <span class="number">03</span>
         <div class="wrapper">
-          <img src="/OurServices/3.jpg" alt="Citizenship issues" class="image" />
+          <img
+            src="/OurServices/3.jpg"
+            alt="Citizenship issues"
+            title="Citizenship issues"
+            class="image"
+          />
           <div class="text-wrapper">
             <h3 class="primary-text">Citizenship issues</h3>
             <p class="secondary-text description">
